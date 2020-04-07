@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Order> 
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "_Layout";
+}
+<h1>Orders</h1>
+<ul>
+    @foreach(var order in Model)
+    {
+        <li> @order.Description</li>
+    }
+</ul>
